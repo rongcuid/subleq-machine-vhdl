@@ -1,0 +1,5 @@
+Z, A ; +0x00 Z = 0 - A ; Z = -A
+A, Z ; +0x04 A = A - Z = A - (-A) = A + A = 2
+loop: Z, Z, loop ; +0x08 Z = Z - Z ; Z = 0
+Z: 0x00000000 ; +0x0C
+A: 0x00000001 ; +0x10

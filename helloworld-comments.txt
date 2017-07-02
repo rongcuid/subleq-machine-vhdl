@@ -1,0 +1,14 @@
+注：0 - (0 - A) = A!
++0x00,00 Z A ; Z <= -A
++0x04,01 SL Z ; SL <= -Z = A
++0x08,02 Z Z ; Z <= 0
++0x0C,03 Z B ; Z <= -B
++0x10,04 SH B ; SH <= -Z = B
++0x14,05 loop: Z Z ; Z <= 0;
+
++0x18,06 Z: 00000000
+-SubLEq- SSD hex:
++0x1C,07 A: 40 6D 1C 7C ;-Sub
++0x20,08 B: 38 79 67 40 ;LEq-
+SL : &SFR.SSDL
+SH : &SFR.SSDH
